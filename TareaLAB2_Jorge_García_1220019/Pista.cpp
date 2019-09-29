@@ -26,7 +26,7 @@ void Pista::Preparar() {
 void Pista::PasoTortuga(int n) {
 	if (n < 6 && n > 0) {
 		if (*PTortuga + 3 >= 70) {
-			PTortuga = &PistaT[69];
+			PTortuga = &PistaL[69];
 		}
 		else {
 			PTortuga += 3;
@@ -35,7 +35,7 @@ void Pista::PasoTortuga(int n) {
 	else if (n < 8 && n > 5)
 	{
 		if (*PTortuga- 6 < 1) {
-			PTortuga = &PistaT[0];
+			PTortuga = &PistaL[0];
 		}
 		else {
 			PTortuga -= 6;
@@ -44,7 +44,7 @@ void Pista::PasoTortuga(int n) {
 	else
 	{
 		if (*PTortuga + 1 >= 70) {
-			PTortuga = &PistaT[69];
+			PTortuga = &PistaL[69];
 		}
 		else {
 			PTortuga += 1;

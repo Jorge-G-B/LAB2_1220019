@@ -37,7 +37,7 @@ namespace TareaLAB2JorgeGarcía1220019 {
 		}
 	private: System::Windows::Forms::Button^  btnPrep;
 	protected:
-	private: System::Windows::Forms::Button^  btnReiniciar;
+
 	private: System::Windows::Forms::Button^  BtnEmpezar;
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::RichTextBox^  rTBRegistro;
@@ -61,7 +61,6 @@ namespace TareaLAB2JorgeGarcía1220019 {
 		{
 			this->components = (gcnew System::ComponentModel::Container());
 			this->btnPrep = (gcnew System::Windows::Forms::Button());
-			this->btnReiniciar = (gcnew System::Windows::Forms::Button());
 			this->BtnEmpezar = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->rTBRegistro = (gcnew System::Windows::Forms::RichTextBox());
@@ -78,20 +77,10 @@ namespace TareaLAB2JorgeGarcía1220019 {
 			this->btnPrep->UseVisualStyleBackColor = true;
 			this->btnPrep->Click += gcnew System::EventHandler(this, &MyForm::btnPrep_Click);
 			// 
-			// btnReiniciar
-			// 
-			this->btnReiniciar->Enabled = false;
-			this->btnReiniciar->Location = System::Drawing::Point(29, 125);
-			this->btnReiniciar->Name = L"btnReiniciar";
-			this->btnReiniciar->Size = System::Drawing::Size(93, 32);
-			this->btnReiniciar->TabIndex = 1;
-			this->btnReiniciar->Text = L"Reiniciar Carrera";
-			this->btnReiniciar->UseVisualStyleBackColor = true;
-			// 
 			// BtnEmpezar
 			// 
 			this->BtnEmpezar->Enabled = false;
-			this->BtnEmpezar->Location = System::Drawing::Point(29, 163);
+			this->BtnEmpezar->Location = System::Drawing::Point(29, 124);
 			this->BtnEmpezar->Name = L"BtnEmpezar";
 			this->BtnEmpezar->Size = System::Drawing::Size(93, 23);
 			this->BtnEmpezar->TabIndex = 2;
@@ -129,7 +118,6 @@ namespace TareaLAB2JorgeGarcía1220019 {
 			this->Controls->Add(this->rTBRegistro);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->BtnEmpezar);
-			this->Controls->Add(this->btnReiniciar);
 			this->Controls->Add(this->btnPrep);
 			this->Name = L"MyForm";
 			this->Text = L"Preparar Carrera";
